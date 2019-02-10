@@ -2,12 +2,9 @@ package day1
 
 import (
 	"strconv"
-
-	"../input"
 )
 
-func CalculateFrequency() int {
-	frequencies := input.GetFrequencies()
+func CalculateFrequency(frequencies []string) int {
 	summedFrequency := 0
 
 	for i := 0; i < len(frequencies); i++ {
@@ -17,8 +14,7 @@ func CalculateFrequency() int {
 	return summedFrequency
 }
 
-func GetFirstFrequencyDuplicate() int {
-	frequencies := input.GetFrequencies()
+func GetFirstFrequencyDuplicate(frequencies []string) int {
 	summedFrequency := 0
 	duplicateFound := false
 	var summedFrequencies = []int{}

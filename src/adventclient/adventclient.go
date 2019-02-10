@@ -36,7 +36,6 @@ func GetStringList(uri string) []string {
 	rawString := GetString(uri)
 	splitInput := strings.Split(rawString, "\n")
 	splitInput = trimLastElement(splitInput)
-
 	return splitInput
 }
 
